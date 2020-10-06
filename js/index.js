@@ -51,3 +51,12 @@ let navigation = document.querySelectorAll('nav a');
 for(let i = 0; i < navigation.length; i++) {
   navigation[i].textContent = siteContent['nav'][`nav-item-${i}`];
 }
+
+let ctaH1 = document.querySelector('.cta-text h1');
+ctaH1.textContent = siteContent['cta']['h1'];
+
+let ctaBtn = document.querySelector('.cta-text button');
+ctaBtn.textContent = siteContent['cta']['button'];
+
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
